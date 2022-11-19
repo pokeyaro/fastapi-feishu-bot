@@ -1,0 +1,7 @@
+# Byte-compiled 
+__pycache__/
+
+# log files and directories
+logs/
+*.log
+
