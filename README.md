@@ -1,6 +1,6 @@
 # FastAPI + MySQL - 搭建飞书消息模块
 
-## 简介
+## 概述
 
 > 一个异步的 `Web` 开发框架，它不同于 `Django` 或 `Flask` 的同步框架; 自带 `swagger` / `redoc` API 文档; 独特的**依赖注入系统**...
 
@@ -8,7 +8,24 @@
 参考 [FastAPI官网](https://fastapi.tiangolo.com/tutorial) 示例代码，
 和 [fastapi-mysql-generator项目](https://github.com/wxy2077/fastapi-mysql-generator) 大部分代码。
 
+## 功能介绍
+
+**1. `Swagger API` 文档**
+
 ![image](https://user-images.githubusercontent.com/58482090/202836719-40547259-ef12-4d83-a81d-c83fdb96695f.png)
+
+**2. `Token` 认证**
+
+![image](https://user-images.githubusercontent.com/58482090/202837456-b5fcfd52-c5ae-440a-a616-cfe3fdddeb52.png)
+
+**3. 发送飞书消息** (动态 `token` 添加到 `Header` 中)
+
+![image](https://user-images.githubusercontent.com/58482090/202838474-1026466d-92d1-4c09-a440-22b4842f93fd.png)
+
+**4. 效果预览**
+
+![image](https://user-images.githubusercontent.com/58482090/202838353-c33a7eb9-a17f-4df2-8f9c-2a44fd720035.png)
+
 
 
 ## 关键点
@@ -16,9 +33,9 @@
 - 依赖注入系统
 - Schemas模式（Pydantic）
 - SQLAlchemy的ORM操作(Pymysql)
-- Typing hint/async
+- Typing hint类型提示
 - 统一的Restful响应体风格
-- Loguru日志模块
+- Loguru日志集成配置
 - Oauth2密码认证模式
 - Requests的二次封装
 
@@ -134,3 +151,9 @@ DB_NAME='app'
     ├── crypts.py
     └── tickets.py
 ```
+
+
+## 历史版本
+
+之前使用 `Flask` 的蓝图布局，写过一个简单版本的飞书机器人消息 `API Restful` 服务：
+[仓库地址](https://github.com/PokeyBoa/lark-robot-message)
