@@ -8,6 +8,8 @@
 参考 [FastAPI官网](https://fastapi.tiangolo.com/tutorial) 示例代码，
 和 [fastapi-mysql-generator项目](https://github.com/wxy2077/fastapi-mysql-generator) 大部分代码。
 
+![image](https://user-images.githubusercontent.com/58482090/202836719-40547259-ef12-4d83-a81d-c83fdb96695f.png)
+
 
 ## 关键点
 
